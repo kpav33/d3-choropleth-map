@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 :root {
-    --one: #F1ECC3;
-    --two: #C9D8B6;
-    --three: #57837B;
-    --four: #515E63;
+    --one: #85603F;
+    --two: #9E7540;
+    --three: #BD9354;
+    --four: #E3D18A;
 }
 
 *,
@@ -16,24 +18,37 @@ body {
     padding: 0;
     padding-bottom: 25px;
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: var(--one);
+    color: white;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 28px;
+}
+
+h2 {
+    margin: 15px;
+    font-size: 20px;
 }
 
 #root {
-    background: wheat;
-    min-width: 1000px;
-    min-height: 600px;
+    background: var(--two);
+    width: 1000px;
+    height: 600px;
     padding: 20px;
     border-radius: 5px 5px 0 0;
 }
 
 #legend {
     padding: 20px 0px;
-    min-width: 1000px;
-    background: wheat;
+    width: 1000px;
+    background: var(--two);
     border-radius: 0 0 5px 5px;
 }
 
@@ -46,7 +61,7 @@ body {
     text-align: center;
     border-radius: 5px;
     color: white;
-    background: rgba(81, 94, 99, 0.9);
+    background: rgba(189, 147, 84, 0.8);
 }
 
 .states {
@@ -55,7 +70,7 @@ body {
 }
 
 .county:hover {
-    fill: black;
+    fill: var(--four);
 }
 
 .federalStates {

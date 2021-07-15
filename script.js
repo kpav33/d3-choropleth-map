@@ -22,6 +22,7 @@ function drawMap() {
     .attr("class", "county states")
     .attr("d", d3.geoPath())
     .attr("fill", (d) => {
+      // Find the education data that belongs to a county and fill the counties color accordingly
       county = educationData.find((item) => item.fips === d.id);
       if (county.bachelorsOrHigher < 15) return "#ecf7fa";
       else if (county.bachelorsOrHigher < 30) return "#b1e1e1";
