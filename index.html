@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Choropleth Map</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+</head>
+<body>
+    <h1 id="title">United States Educational Attainment</h1>
+    <h2 id="description"> Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014) </h2>
+    <svg id="root"></svg>
+    <svg id="legend">
+        <g>
+            <rect x="300" y="0" width="20" height="20" fill="#ecf7fa"></rect>
+            <text x="330" y="15" fill="black">Less than 15% of adults with tertiary education</text>
+        </g>
+        <g>
+            <rect x="300" y="30" width="20" height="20" fill="#b1e1e1"></rect>
+            <text x="330" y="45" fill="black">More than 15% and less than 30% of adults with tertiary education</text>
+        </g>
+        <g>
+            <rect x="300" y="60" width="20" height="20" fill="#68c0a2"></rect>
+            <text x="330" y="75" fill="black">More than 30% and less than 45% of adults with tertiary education</text>
+        </g>
+        <g>
+            <rect x="300" y="90" width="20" height="20" fill="#35a060"></rect>
+            <text x="330" y="105" fill="black">More than 45% and less than 58% of adults with tertiary education</text>
+        </g>
+        <g>
+            <rect x="300" y="120" width="20" height="20" fill="#136c31"></rect>
+            <text x="330" y="135" fill="black">More than 58% of adults with tertiary education</text>
+        </g>
+    </svg>
+    <text id="tooltip"></text>
+</body>
+<script defer src="./script.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
